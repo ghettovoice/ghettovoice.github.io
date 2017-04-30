@@ -2,7 +2,7 @@
 
 Under construction
 
-## Iinteresting repositories
+## Interesting repositories
 
 * [vuelayers](https://github.com/ghettovoice/vuelayers)
 * [ol-rotate-feature](https://ghettovoice.github.io/ol-rotate-feature/)
