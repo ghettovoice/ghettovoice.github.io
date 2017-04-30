@@ -1,4 +1,4 @@
-# Main entry
+# Main entry point
 
 Under construction
 
