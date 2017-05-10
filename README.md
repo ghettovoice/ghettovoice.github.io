@@ -1,6 +1,4 @@
-# Main entry point
-
-Under construction
+## Under construction
 
 ## Interesting repositories
 
