@@ -1,3 +1,7 @@
+---
+redirect_from:
+  - /ol3-rotate-feature
+---
 **Under construction**
 
 ## Interesting repositories
