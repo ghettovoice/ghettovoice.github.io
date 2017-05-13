@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- partial('partial/head') %>
+<body>
+  <main id="page">
+    <div>
+      <%- body %>
+    </div>
+  </main>
+  <hr>
+  <footer>
+    <div class="has-text-centered">
+      <small>&copy; Vladimir Vershinin <%- date(Date.now(), 'YYYY') %></small>
+    </div>
+  </footer>
+</body>
+</html>
