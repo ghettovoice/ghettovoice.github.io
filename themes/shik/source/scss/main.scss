@@ -9,6 +9,11 @@ html, body {
 }
 
 body {
+  background : darken($primary, 10%) -o-linear-gradient(135deg, darken($primary, 10%), darken($green, 10%));
+  background : darken($primary, 10%) -moz-linear-gradient(135deg, darken($primary, 10%), darken($green, 10%));
+  background : darken($primary, 10%) -webkit-linear-gradient(135deg, darken($primary, 10%), darken($green, 10%));
+  background : darken($primary, 10%) -ms-linear-gradient(135deg, darken($primary, 10%), darken($green, 10%));
+  background : darken($primary, 10%) linear-gradient(135deg, darken($primary, 10%), darken($green, 10%));
 }
 
 .wh100 {
@@ -49,12 +54,12 @@ body {
 }
 
 .animate-2 {
-  -moz-animation-delay    : .5s;
-  -webkit-animation-delay : .5s;
-  -ms-animation-delay     : .5s;
-  -o-animation-delay      : .5s;
-  animation-delay         : .5s;
-  animation-duration      : 1.3s;
+  -moz-animation-delay    : .4s;
+  -webkit-animation-delay : .4s;
+  -ms-animation-delay     : .4s;
+  -o-animation-delay      : .4s;
+  animation-delay         : .4s;
+  animation-duration      : 1.5s;
 }
 
 .animate-3 {
@@ -63,5 +68,5 @@ body {
   -ms-animation-delay     : .95s;
   -o-animation-delay      : .95s;
   animation-delay         : .95s;
-  animation-duration      : 1.5s;
+  animation-duration      : 1.7s;
 }
