@@ -22,13 +22,20 @@ body {
 }
 
 .layout {
-  display         : flex;
-  justify-content : center;
-  align-items     : center;
   position        : relative;
 
   > .wrap {
-    padding : 3rem;
+    padding : 0 1rem;
+
+    @include tablet() {
+      padding : 0 3rem;
+    }
+  }
+
+  @include tablet() {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
   }
 }
 
