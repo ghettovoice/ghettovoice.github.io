@@ -1,4 +1,5 @@
 @import "variables";
+@import "../../../../node_modules/animate.css/animate";
 @import "../../../../node_modules/bulma/bulma";
 
 html, body {
@@ -8,11 +9,6 @@ html, body {
 }
 
 body {
-  //background-image : -webkit-linear-gradient(82deg, hsla(220, 100%, 12%, 1), hsla(220, 40%, 4%, 1) 50%);
-  //background-image : -moz-linear-gradient(82deg, hsla(220, 100%, 12%, 1), hsla(220, 40%, 4%, 1) 50%);
-  //background-image : -o-linear-gradient(82deg, hsla(220, 100%, 12%, 1), hsla(220, 40%, 4%, 1) 50%);
-  //background-image : -ms-linear-gradient(82deg, hsla(220, 100%, 12%, 1), hsla(220, 40%, 4%, 1) 50%);
-  //background-image : linear-gradient(8deg, hsla(220, 100%, 12%, 1), hsla(220, 40%, 4%, 1) 50%);
 }
 
 .wh100 {
@@ -38,14 +34,34 @@ body {
 }
 
 .page {
-  &.index {
-    > .section {
-      background : none;
-      border-top : 1px $grey-lighter solid;
+  .section {
+    background : none;
+    border-top : 1px $grey-lighter solid;
 
-      &:first-child {
-        border-top : none;
-      }
+    &:first-child {
+      border-top : none;
     }
   }
+}
+
+.animate-1 {
+  animation-duration      : 1s;
+}
+
+.animate-2 {
+  -moz-animation-delay    : .5s;
+  -webkit-animation-delay : .5s;
+  -ms-animation-delay     : .5s;
+  -o-animation-delay      : .5s;
+  animation-delay         : .5s;
+  animation-duration      : 1.3s;
+}
+
+.animate-3 {
+  -moz-animation-delay    : .95s;
+  -webkit-animation-delay : .95s;
+  -ms-animation-delay     : .95s;
+  -o-animation-delay      : .95s;
+  animation-delay         : .95s;
+  animation-duration      : 1.5s;
 }

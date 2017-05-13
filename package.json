@@ -6,6 +6,7 @@
     "version": "3.3.5"
   },
   "dependencies": {
+    "animate.css": "^3.5.2",
     "bulma": "^0.4.1",
     "hexo": "^3.3.5",
     "hexo-deployer-git": "^0.3.0",
