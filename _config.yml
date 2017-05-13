@@ -71,7 +71,7 @@ theme: shik
 deploy:
   type: git
   repo: git@github.com:ghettovoice/ghettovoice.github.io.git
-  branch: gh-pages
+  branch: master
 
 # Markdown
 ## https://github.com/chjj/marked
