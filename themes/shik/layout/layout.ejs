@@ -2,16 +2,14 @@
 <html lang="en">
 <%- partial('partial/head') %>
 <body>
-  <main id="page">
-    <div>
-      <%- body %>
+  <div class="layout container wh100">
+    <div class="wrap">
+      <%- partial('partial/header') %>
+      <main id="body">
+        <%- body %>
+      </main>
+      <%- partial('partial/footer') %>
     </div>
-  </main>
-  <hr>
-  <footer>
-    <div class="has-text-centered">
-      <small>&copy; Vladimir Vershinin <%- date(Date.now(), 'YYYY') %></small>
-    </div>
-  </footer>
+  </div>
 </body>
 </html>

@@ -1,7 +1,7 @@
 @import "../../../../node_modules/bulma/sass/utilities/all";
 
 // Set your colors
-$primary: #25AAA2;
+$primary : #2ba672;
 $primary-invert: findColorInvert($primary);
 $twitter: #4099FF;
 $twitter-invert: findColorInvert($twitter);
@@ -20,7 +20,14 @@ $colors: (
   "twitter": ($twitter, $twitter-invert)
 );
 
+// Text
+//$text : $white;
+//$text-strong : $white;
+//$title : $white;
+//$subtitle : $white-ter;
+
 // Links
 $link: $primary;
+$link-hover : $blue;
 $link-invert: $primary-invert;
 $link-focus-border: $primary;

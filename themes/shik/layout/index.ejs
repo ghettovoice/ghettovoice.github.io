@@ -1,14 +1,16 @@
-<div class="has-text-centered">
-  <h1 class="title is-1">
-    <%- config.title %>
-  </h1>
-  <h3 class="subtitle is-3">
-    <a href="<%- theme.github_url %>">@<%- theme.github_user %></a>
-  </h3>
-  <p class="is-4">
-    <%- config.subtitle %>
-  </p>
-
-  <hr>
-  <%- page.content %>
+<div class="index page">
+  <section class="has-text-centered section">
+    <h1 class="title is-1">
+      <%- config.title %>
+    </h1>
+    <h3 class="subtitle is-3">
+      <a href="<%- theme.github_url %>">@<%- theme.github_user %></a>
+    </h3>
+    <p class="subtitle is-4">
+      <%- config.subtitle %>
+    </p>
+  </section>
+  <section class="content section">
+    <%- page.content %>
+  </section>
 </div>

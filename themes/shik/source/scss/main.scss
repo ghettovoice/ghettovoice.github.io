@@ -1,4 +1,51 @@
-@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
-
 @import "variables";
 @import "../../../../node_modules/bulma/bulma";
+
+html, body {
+  width    : 100%;
+  height   : 100%;
+  overflow : auto;
+}
+
+body {
+  //background-image : -webkit-linear-gradient(82deg, hsla(220, 100%, 12%, 1), hsla(220, 40%, 4%, 1) 50%);
+  //background-image : -moz-linear-gradient(82deg, hsla(220, 100%, 12%, 1), hsla(220, 40%, 4%, 1) 50%);
+  //background-image : -o-linear-gradient(82deg, hsla(220, 100%, 12%, 1), hsla(220, 40%, 4%, 1) 50%);
+  //background-image : -ms-linear-gradient(82deg, hsla(220, 100%, 12%, 1), hsla(220, 40%, 4%, 1) 50%);
+  //background-image : linear-gradient(8deg, hsla(220, 100%, 12%, 1), hsla(220, 40%, 4%, 1) 50%);
+}
+
+.wh100 {
+  width  : 100%;
+  height : 100%;
+}
+
+.layout {
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  position        : relative;
+
+  > .wrap {
+    padding : 3rem;
+  }
+}
+
+.footer {
+  background : none;
+  padding    : 2rem 1.5rem 2rem;
+  border-top : 1px $grey-lighter solid;
+}
+
+.page {
+  &.index {
+    > .section {
+      background : none;
+      border-top : 1px $grey-lighter solid;
+
+      &:first-child {
+        border-top : none;
+      }
+    }
+  }
+}
