@@ -90,3 +90,12 @@ node_sass:
   outputStyle: nested
   precision: 5
   sourceComments: false
+
+robotstxt:
+  useragent: '*'
+  disallow:
+    - /rxjs-postgres
+  sitemap: /sitemap.xml
+
+sitemap:
+  path: sitemap.xml
