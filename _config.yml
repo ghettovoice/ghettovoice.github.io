@@ -92,10 +92,15 @@ node_sass:
   sourceComments: false
 
 robotstxt:
-  useragent: '*'
-  disallow:
-    - /rxjs-postgres
-  sitemap: /sitemap.xml
+  sitemap: https://ghettovoice.github.io/sitemap.xml
+  uas:
+  - useragent: '*'
+    disallow:
+      - /rxjs-postgres
+  - useragent: Yandex
+    host: ghettovoice.github.io
+    disallow:
+      - /rxjs-postgres
 
 sitemap:
   path: sitemap.xml
