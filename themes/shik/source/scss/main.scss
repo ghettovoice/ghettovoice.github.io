@@ -1,5 +1,5 @@
+/*! Vladimir Vershinin homepage */
 @import "variables";
-@import "../../../../node_modules/animate.css/animate";
 @import "../../../../node_modules/bulma/bulma";
 
 html, body {
@@ -9,11 +9,7 @@ html, body {
 }
 
 body {
-  background : darken($primary, 10%) -o-linear-gradient(135deg, darken($primary, 10%), darken($green, 10%));
-  background : darken($primary, 10%) -moz-linear-gradient(135deg, darken($primary, 10%), darken($green, 10%));
-  background : darken($primary, 10%) -webkit-linear-gradient(135deg, darken($primary, 10%), darken($green, 10%));
-  background : darken($primary, 10%) -ms-linear-gradient(135deg, darken($primary, 10%), darken($green, 10%));
-  background : darken($primary, 10%) linear-gradient(135deg, darken($primary, 10%), darken($green, 10%));
+  background : darken($primary, 20%) linear-gradient(120deg, darken($primary, 20%), darken($green, 20%));
 }
 
 .wh100 {
@@ -21,6 +17,7 @@ body {
   height : 100%;
 }
 
+// layout
 .layout {
   position        : relative;
 
@@ -42,38 +39,72 @@ body {
 .footer {
   background : none;
   padding    : 2rem 1.5rem 2rem;
-  border-top : 1px $grey-lighter solid;
 }
 
 .page {
   .section {
     background : none;
-    border-top : 1px $grey-lighter solid;
-
-    &:first-child {
-      border-top : none;
-    }
   }
 }
 
-.animate-1 {
-  animation-duration      : 1s;
+// Animation
+.block-animate {
+  animation-name            : show-block;
+  animation-duration        : 1s;
+  animation-fill-mode       : both;
+  animation-timing-function : ease-out;
+
+  &.animate-1 {
+    animation-duration : 1s;
+  }
+
+  &.animate-2 {
+    animation-delay : .2s;
+  }
+
+  &.animate-3 {
+    animation-delay : .4s;
+  }
 }
 
-.animate-2 {
-  -moz-animation-delay    : .4s;
-  -webkit-animation-delay : .4s;
-  -ms-animation-delay     : .4s;
-  -o-animation-delay      : .4s;
-  animation-delay         : .4s;
-  animation-duration      : 1.5s;
+.line-animate {
+  animation-name            : show-line;
+  animation-duration        : 1s;
+  animation-fill-mode       : both;
+  animation-timing-function : ease-out;
+  animation-delay           : .4s;
+
+  &.animate-1 {
+    animation-duration : 1s;
+  }
+
+  &.animate-2 {
+    animation-delay : .6s;
+  }
 }
 
-.animate-3 {
-  -moz-animation-delay    : .95s;
-  -webkit-animation-delay : .95s;
-  -ms-animation-delay     : .95s;
-  -o-animation-delay      : .95s;
-  animation-delay         : .95s;
-  animation-duration      : 1.7s;
+@keyframes show-block {
+  from {
+    transform : scale3d(1.4, 1.4, 1);
+    filter    : blur(2);
+    opacity   : 0;
+  }
+
+  to {
+    transform : none;
+    filter    : blur(1);
+    opacity   : 1;
+  }
+}
+
+@keyframes show-line {
+  from {
+    transform : scale3d(0, 1, 1);
+    opacity   : 0;
+  }
+
+  to {
+    transform : none;
+    opacity   : 1;
+  }
 }

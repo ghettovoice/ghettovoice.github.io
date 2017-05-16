@@ -104,3 +104,24 @@ robotstxt:
 
 sitemap:
   path: sitemap.xml
+
+autoprefixer:
+  exclude:
+    - '*.min.css'
+  browsers:
+    - 'last 2 versions'
+
+html_minifier:
+  enable: true
+css_minifier:
+  enable: true
+  exclude:
+    - '*.min.css'
+js_minifier:
+  enable: true
+  mangle: true
+  output:
+    preamble: '/*! Vladimir Vershinin homepage */'
+  compress: true
+  exclude:
+    - '*.min.js'
