@@ -5,7 +5,7 @@
   "scripts": {
     "start": "hexo server --debug",
     "build": "hexo generate",
-    "deploy": "npm run build && hexo generate && hexo deploy && rm -rf .deploy_git"
+    "deploy": "npm run build && hexo generate && hexo deploy"
   },
   "hexo": {
     "version": "3.3.5"
