@@ -96,11 +96,11 @@ robotstxt:
   uas:
   - useragent: '*'
     disallow:
-      - /rxjs-postgres
+      - /rxjs-postgres/*
   - useragent: Yandex
     host: ghettovoice.github.io
     disallow:
-      - /rxjs-postgres
+      - /rxjs-postgres/*
 
 sitemap:
   path: sitemap.xml

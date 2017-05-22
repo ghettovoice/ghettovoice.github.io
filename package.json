@@ -1,11 +1,12 @@
 {
   "name": "ghetovoice-site",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "start": "hexo server --debug",
     "build": "hexo generate",
-    "deploy": "npm run build && hexo generate && hexo deploy"
+    "deploy": "npm run build && hexo deploy",
+    "clean": "hexo clean"
   },
   "hexo": {
     "version": "3.3.5"
