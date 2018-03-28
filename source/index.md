@@ -4,7 +4,7 @@ id: index
 title: Vladimir Vershinin @ghettovoice
 ---
 
-### Repos
+### Projects
 
 * [vuelayers](https://github.com/ghettovoice/vuelayers)
 * [ol-rotate-feature](https://ghettovoice.github.io/ol-rotate-feature)
