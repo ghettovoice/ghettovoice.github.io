@@ -9,7 +9,7 @@
     "clean": "hexo clean"
   },
   "hexo": {
-    "version": "3.3.5"
+    "version": "3.6.0"
   },
   "dependencies": {
     "bulma": "^0.4.1",
