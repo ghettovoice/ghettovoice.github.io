@@ -5,3 +5,8 @@ google_analytics: UA-98870917-1
 
 github_user: ghettovoice
 github_url: https://github.com/ghettovoice
+
+favicon:
+  ico: /images/favicon.ico
+  png16: /images/favicon-16x16.png
+  png32: /images/favicon-32x32.png

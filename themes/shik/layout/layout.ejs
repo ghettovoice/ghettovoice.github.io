@@ -2,37 +2,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#6052d7">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#6052d7">
 
-  <title><%= page.title || config.title %></title>
-  <meta name="description" content="<%= page.description || config.description %>">
-  <meta name="keywords" content="<%= page.keywords || config.keywords %>">
-  <!--Author-->
-  <% if (config.author){ %>
-  <meta name="author" content="<%= config.author %>">
-  <% } %>
-  <!--Favicon-->
-  <% if (theme.favicon){ %>
-  <link rel="icon" href="<%= theme.favicon %>">
-  <% } %>
+    <title><%= page.title || config.title %></title>
+    <meta name="description" content="<%= page.description || config.description %>">
+    <meta name="keywords" content="<%= page.keywords || config.keywords %>">
+    <!--Author-->
+    <% if (config.author){ %>
+        <meta name="author" content="<%= config.author %>">
+    <% } %>
+    <!--Favicon-->
+    <% if (theme.favicon){ %>
+        <link rel="icon" href="<%= theme.favicon.ico %>">
+        <link rel="icon" type="image/png" sizes="32x32" href="<%= theme.favicon.png16 %>">
+        <link rel="icon" type="image/png" sizes="16x16" href="<%= theme.favicon.png32 %>">
+    <% } %>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <%- css('scss/main') %>
+    <%- css('scss/main') %>
 
-  <%- partial('partial/ga') %>
+    <%- partial('partial/ga') %>
 </head>
 <body>
-  <div class="layout container wh100">
-    <div class="wrap">
-      <%- partial('partial/header') %>
-      <main id="body">
-        <%- body %>
-      </main>
-      <%- partial('partial/footer') %>
+    <div class="layout container wh100">
+        <div class="wrap">
+            <%- partial('partial/header') %>
+            <main id="body">
+                <%- body %>
+            </main>
+            <%- partial('partial/footer') %>
+        </div>
     </div>
-  </div>
+
+    <script src="https://profile.codersrank.io/widget/widget.js"></script>
 </body>
 </html>

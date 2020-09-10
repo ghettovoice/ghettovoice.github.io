@@ -1,17 +1,22 @@
 <div class="index page">
-  <section class="has-text-centered section block-animate animate-1">
-    <h1 class="title is-1">
-      <%- config.title %>
-    </h1>
-    <h3 class="subtitle is-3">
-      <a href="<%- theme.github_url %>">@<%- theme.github_user %></a>
-    </h3>
-    <p class="subtitle is-4">
-      <%- config.subtitle %>
-    </p>
-  </section>
-  <hr class="line line-animate animate-1">
-  <section class="content section block-animate animate-2">
-    <%- page.content %>
-  </section>
+    <section class="has-text-centered section block-animate animate-1">
+        <h1 class="title is-1">
+            <%- config.title %>
+        </h1>
+        <h3 class="subtitle is-3">
+            <a href="<%- theme.github_url %>">@<%- theme.github_user %></a>
+        </h3>
+        <p class="subtitle is-4">
+            <%- config.subtitle %>
+        </p>
+    </section>
+    <hr class="line line-animate animate-1">
+    <section class="section block-animate animate-2">
+        <div class="content">
+            <%- page.content %>
+        </div>
+    </section>
+    <section class="section">
+        <codersrank-widget username="ghettovoice"></codersrank-widget>
+    </section>
 </div>
