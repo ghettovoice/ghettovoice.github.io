@@ -1,4 +1,5 @@
 <hr class="line line-animate animate-2">
 <footer class="has-text-centered footer block-animate animate-3">
-  <small>&copy; 2016-<%= date(Date.now(), 'YYYY') %> Vladimir Vershinin</small>
+  <small>&copy; 2016-<span id="current-year"></span> Vladimir Vershinin</small>
+  <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 </footer>

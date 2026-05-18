@@ -4,7 +4,16 @@ id: index
 title: Vladimir Vershinin @ghettovoice
 ---
 
-### Projects
+Dev in Kazan, RU.
+
+## Open source projects
+
+### Go
+
+* [gosip](https://github.com/ghettovoice/gosip)
+* [abnf](https://github.com/ghettovoice/abnf)
+
+### JS
 
 * [vuelayers](https://github.com/ghettovoice/vuelayers)
 * [ol-rotate-feature](https://ghettovoice.github.io/ol-rotate-feature)

@@ -84,44 +84,47 @@ markdown:
   smartLists: true
   smartypants: true
 
-# SCSS settings
-node_sass:
+# SCSS settings (dart-sass)
+sass:
   debug: false
-  outputStyle: nested
+  outputStyle: expanded
   precision: 5
   sourceComments: false
 
 robotstxt:
   sitemap: https://ghettovoice.github.io/sitemap.xml
   uas:
-  - useragent: '*'
-    disallow:
-      - /rxjs-postgres/*
-  - useragent: Yandex
-    host: ghettovoice.github.io
-    disallow:
-      - /rxjs-postgres/*
+    - useragent: "*"
+      disallow:
+        - /rxjs-postgres/*
+    - useragent: Yandex
+      host: ghettovoice.github.io
+      disallow:
+        - /rxjs-postgres/*
 
 sitemap:
   path: sitemap.xml
 
 autoprefixer:
   exclude:
-    - '*.min.css'
-  browsers:
-    - 'last 2 versions'
+    - "*.min.css"
 
-html_minifier:
+filter_optimize:
   enable: true
-css_minifier:
-  enable: true
-  exclude:
-    - '*.min.css'
-js_minifier:
-  enable: true
-  mangle: true
-  output:
-    preamble: '/*! Vladimir Vershinin homepage */'
-  compress: true
-  exclude:
-    - '*.min.js'
+  html:
+    enable: true
+    compress: true
+  css:
+    enable: true
+    minify: true
+    exclude:
+      - "*.min.css"
+  js:
+    enable: true
+    minify: true
+    mangle: true
+    output:
+      preamble: "/*! Vladimir Vershinin homepage */"
+    compress: true
+    exclude:
+      - "*.min.js"
