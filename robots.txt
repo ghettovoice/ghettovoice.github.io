@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /rxjs-postgres/*
+
+User-agent: Yandex
+Disallow: /rxjs-postgres/*
+Host: ghettovoice.github.io
+
+Sitemap: https://ghettovoice.github.io/sitemap.xml
